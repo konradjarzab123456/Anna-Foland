@@ -1,0 +1,177 @@
+{
+  "brand_identity": {
+    "company_name": "KRAUZE STUDIO & BUILD",
+    "tagline": "Precyzja architektoniczna, inżynieria jutra",
+    "market": "Polska (Warszawa / Kraków / Wrocław)",
+    "tone": "Ultra-minimalistyczny, prestiżowy, edytorski, klasyczno-korporacyjny",
+    "aesthetic_archetype": "Swiss Monograph & High-End Polish Modernism",
+    "app_type": "marketing_site / business_card",
+    "language": "pl"
+  },
+  "color_system": {
+    "mode": "light_first",
+    "palette": {
+      "background_primary": "#FAF9F6",
+      "background_card": "#FFFFFF",
+      "background_subtle": "#F3F4F6",
+      "background_accent_dark": "#0B0F17",
+      "text_primary": "#0A0D14",
+      "text_secondary": "#525866",
+      "text_muted": "#868C98",
+      "border_hairline": "#E4E7EC",
+      "border_focus": "#0A0D14",
+      "accent_brand": "#111827",
+      "accent_gold": "#C5A059",
+      "accent_hover": "#1F2937",
+      "overlay_scrim": "rgba(10, 13, 20, 0.4)"
+    },
+    "rules": [
+      "Nigdy nie używaj czystej czerni #000000 do tła ani rozmytych ciemnych gradientów na całą stronę.",
+      "Cienie muszą być ultra-delikatne (0 2px 20px -4px rgba(0,0,0,0.04)). Powierzchnie definiuj poprzez 1px granice (hairline borders #E4E7EC).",
+      "Nagłówki i nawigacja zachowują kontrast APCA > 60 (WCAG AAA)."
+    ]
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, serif",
+    "heading_alt": "Syne, sans-serif",
+    "body_font": "Plus Jakarta Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[1.05] font-light",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-light",
+      "h3_card": "text-xl sm:text-2xl font-medium tracking-snug",
+      "body_lead": "text-lg sm:text-xl text-slate-600 leading-relaxed font-normal",
+      "body_regular": "text-base text-slate-600 leading-relaxed font-normal",
+      "label_eyebrow": "text-xs uppercase tracking-[0.25em] font-semibold text-slate-500"
+    }
+  },
+  "navigation_and_structure": {
+    "navigation_tabs": [
+      {
+        "id": "start",
+        "label": "Start",
+        "path": "/"
+      },
+      {
+        "id": "o-firmie",
+        "label": "O firmie",
+        "path": "/o-firmie"
+      },
+      {
+        "id": "oferta",
+        "label": "Oferta",
+        "path": "/oferta"
+      },
+      {
+        "id": "realizacje",
+        "label": "Realizacje",
+        "path": "/realizacje"
+      },
+      {
+        "id": "kontakt",
+        "label": "Kontakt",
+        "path": "/kontakt"
+      }
+    ],
+    "header_spec": {
+      "position": "sticky top-0 z-50",
+      "background": "backdrop-blur-md bg-white/80 border-b border-slate-200/60",
+      "components": "Minimalist SVG favicon/logo mark on left, centered desktop horizontal nav links with active indicator, right side interactive CTA 'Umów konsultację' (opens interactive dialogue drawer / modal)."
+    }
+  },
+  "key_features_and_motion": {
+    "hero_kinetic_reveal": {
+      "mechanism": "Masked line-by-line reveal using Framer Motion (y: 100% to 0%, overflow-hidden containers) triggered on page mount.",
+      "lines": [
+        "ARCHITEKTURA.",
+        "INŻYNIERIA STRUKTURALNA.",
+        "WYKONAWSTWO PREMIUM."
+      ]
+    },
+    "hero_3d_parallax": {
+      "mechanism": "Interactive 3D glass monolith tilt canvas (Three.js / React Three Fiber or Framer Motion mouse-driven 3D perspective matrix transform with spotlight light reflections)."
+    },
+    "slow_editorial_marquee": {
+      "style": "Low-contrast drifting ticker with ultra-wide gap, subtle font-serif typography and minimal separators",
+      "content": "WARSZAWA • KRAKÓW • WROCŁAW • REPREZENTACYJNE REZYDENCJE • OBIEKTY KOMERCYJNE • CERTYFIKACJA LEED PLATINUM • STAL I SZKŁO"
+    },
+    "real_photography_treatment": {
+      "framing": "Clipped asymmetric frames (e.g. rounded-br-[80px], aspect-[16/10], spotlight follow cursor reveal, greyscale-to-color interactive hover).",
+      "images": {
+        "hero_building": "https://images.unsplash.com/photo-1666290439931-42f8f4c275b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwcG9saXNoJTIwY29ycG9yYXRlJTIwb2ZmaWNlJTIwYXJjaGl0ZWN0dXJlJTIwaW50ZXJpb3IlMjBnbGFzcyUyMHNwb3RsaWdodCUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc5MTk2MDIwNHww&ixlib=rb-4.1.0&q=85",
+        "glass_interior": "https://images.unsplash.com/photo-1724047869904-8c7784296dcc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsJTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwcG9saXNoJTIwY29ycG9yYXRlJTIwb2ZmaWNlJTIwYXJjaGl0ZWN0dXJlJTIwaW50ZXJpb3IlMjBnbGFzcyUyMHNwb3RsaWdodCUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc5MTk2MDIwNHww&ixlib=rb-4.1.0&q=85",
+        "concrete_monolith": "https://images.unsplash.com/photo-1614595737476-42487331b8a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtaW5pbWFsJTIwY29uY3JldGUlMjBhcmNoaXRlY3R1cmUlMjBleHRlcmlvciUyMGRlc2lnbiUyMGJ1aWxkJTIwbHV4dXJ5JTIwcHJvcGVydHklMjBtb25vbGl0aHxlbnwwfHx8fDE3OTE5NjAyMTB8MA&ixlib=rb-4.1.0&q=85",
+        "leadership_portrait": "https://images.unsplash.com/photo-1625929664135-197db5f6c857?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBsZWFkZXJzaGlwJTIwdGVhbSUyMGFyY2hpdGVjdHVyZSUyMG1lZXRpbmclMjBtaW5pbWFsJTIwZ2xhc3MlMjBzdHVkaW8lMjBvZmZpY2UlMjBwb3J0cmFpdHxlbnwwfHx8fDE3OTE5NjAyMTB8MA&ixlib=rb-4.1.0&q=85",
+        "team_meeting": "https://images.unsplash.com/photo-1763550662603-78aa2f2033bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBsZWFkZXJzaGlwJTIwdGVhbSUyMGFyY2hpdGVjdHVyZSUyMG1lZXRpbmclMjBtaW5pbWFsJTIwZ2xhc3MlMjBzdHVkaW8lMjBvZmZpY2UlMjBwb3J0cmFpdHxlbnwwfHx8fDE3OTE5NjAyMTB8MA&ixlib=rb-4.1.0&q=85",
+        "minimal_structure": "https://images.unsplash.com/photo-1614595737683-1740e41bfaac?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBtaW5pbWFsJTIwY29uY3JldGUlMjBhcmNoaXRlY3R1cmUlMjBleHRlcmlvciUyMGRlc2lnbiUyMGJ1aWxkJTIwbHV4dXJ5JTIwcHJvcGVydHklMjBtb25vbGl0aHxlbnwwfHx8fDE3OTE5NjAyMTB8MA&ixlib=rb-4.1.0&q=85"
+      }
+    },
+    "smooth_scrolling": "Implement `@studio-freight/lenis` or custom RAF momentum smooth scroll wrapper for fluid inertia movement."
+  },
+  "logo_mark_spec": {
+    "svg_markup": "<svg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'><rect width='36' height='36' rx='4' fill='#0A0D14'/><path d='M10 26V10L19 26V10' stroke='#FFFFFF' stroke-width='2' stroke-linecap='square'/><path d='M26 10L20 18L26 26' stroke='#C5A059' stroke-width='2' stroke-linecap='square'/></svg>",
+    "favicon_integration": "Usable directly in <head> or header component."
+  },
+  "page_blueprints": {
+    "start_page": [
+      "Kinetic Masked Title Reveal & 3D Architectural Canvas Moment",
+      "Executive Statement & Fast Metrics (280+ zrealizowanych projektów, 18 lat na rynku)",
+      "Slow Editorial Marquee drift",
+      "Wybrane Realizacje (Interactive project grid with hover spotlight & filter tabs)",
+      "Nasze Zakresy (Architecture, General Contracting, Interior Engineering)",
+      "Opinie Klientów & Certyfikaty (Awwwards style client testimonials & ISO badges)",
+      "Szybki formularz kontaktowy z walidacją"
+    ],
+    "o_firmie_page": [
+      "Misja i Historia Krauze Studio (Od 2008 roku w Warszawie)",
+      "Wartości: Precyzja, Zrównoważony Rozwój, Innowacja Materiałowa",
+      "Zespół Ekspertów (Interaktywne karty architektów i inżynierów z portrait spotlight)",
+      "Nagrody i Publikacje (ArchDaily, SARP, Awwwards Honorable Mention)"
+    ],
+    "oferta_page": [
+      "Szczegółowy katalog usług: 1. Projektowanie Architektoniczne, 2. Generalne Wykonawstwo, 3. Nadzór Inwestorski, 4. Modernizacje i Fit-out",
+      "Interaktywny kalkulator wstępnej wyceny projektu",
+      "Proces współpracy (Krok po kroku: Analiza -> Koncepcja -> Projekt -> Realizacja)"
+    ],
+    "realizacje_page": [
+      "Pełne Portfolio Projektowe z filtrowaniem wg kategorii (Komercyjne, Rezydencje, Użyteczność Publiczna)",
+      "Strumień detali architektonicznych z porównywaniem przed/po (Before/After slider)",
+      "Interaktywny modal podglądu wybranego projektu z rzutami technicznymi i specyfikacją"
+    ],
+    "kontakt_page": [
+      "Wizyta w biurze: Interaktywna mapa i dane rejestrowe (NIP, REGON, KRS)",
+      "Formularz zapytania ofertowego z wyborem budżetu i załącznikiem danych",
+      "Bezpośredni kontakt do liderów działów"
+    ]
+  },
+  "testing_attributes": {
+    "data_testids": {
+      "nav_start_link": "nav-link-start",
+      "nav_o_firmie_link": "nav-link-o-firmie",
+      "nav_oferta_link": "nav-link-oferta",
+      "nav_realizacje_link": "nav-link-realizacje",
+      "nav_kontakt_link": "nav-link-kontakt",
+      "cta_consultation_button": "cta-consultation-btn",
+      "contact_form_name_input": "contact-name-input",
+      "contact_form_email_input": "contact-email-input",
+      "contact_form_service_select": "contact-service-select",
+      "contact_form_message_input": "contact-message-input",
+      "contact_form_submit_button": "contact-submit-button",
+      "project_filter_all": "project-filter-all",
+      "project_filter_residential": "project-filter-residential",
+      "project_filter_commercial": "project-filter-commercial",
+      "project_card_item": "project-card-item",
+      "calculator_square_meters_input": "calculator-sqm-input",
+      "calculator_type_select": "calculator-type-select",
+      "calculator_result_display": "calculator-result-display"
+    }
+  },
+  "instructions_to_main_agent": "Zbuduj kompletny, ultra-dopracowany wizualnie serwis wielostronicowy w języku polskim z PURE HTML/Tailwind i Framer Motion. Upewnij się, że płynny scroll, interaktywne animacje odkrywania oraz selektory testowe data-testid są w pełni zaimplementowane w komponentach React (.js). Zachowaj idealne proporcje bento, dużą przestrzeń p-8 / p-12 i kontrast APCA.",
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Twórz unikalne, edytorskie układy nawiązujące do drukowanych monografii architektonicznych.",
+    "Zawsze stosuj przyciski o wyrazistych interakcjach z mikro-animacją hover.",
+    "Każdy element interaktywny MUSI posiadać atrybut data-testid w konwencji kebab-case.",
+    "Używaj Sonner do powiadomień toast.",
+    "Brak czysto czarnego tła w gradientach - postaw na estetykę bieli, surowego betonu i grafitu."
+  ]
+}

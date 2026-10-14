@@ -1,0 +1,90 @@
+/* Slow editorial marquee */
+.marquee-track {
+    animation: marquee 64s linear infinite;
+    will-change: transform;
+}
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Film grain overlay */
+.grain-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Spotlight on tilt images */
+.tilt-spot .spotlight {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    background: radial-gradient(
+        560px circle at var(--spot, 50% 50%),
+        rgba(197, 160, 89, 0.22),
+        transparent 46%
+    );
+}
+.tilt-spot:hover .spotlight {
+    opacity: 1;
+}
+
+/* Editorial underline links */
+.link-underline {
+    position: relative;
+}
+.link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-underline:hover::after,
+.link-underline.is-active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Photo treatment: greyscale to colour on hover */
+.img-treat {
+    filter: grayscale(0.35);
+    transition: filter 0.7s ease, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .img-treat {
+    filter: grayscale(0);
+    transform: scale(1.04);
+}
+
+/* Hairline card hover lift */
+.card-lift {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+}
+.card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.06);
+}
+
+/* Numbered service row hover */
+.service-row {
+    transition: background-color 0.4s ease, padding-left 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.service-row:hover {
+    background-color: #ffffff;
+    padding-left: 1.75rem;
+}
