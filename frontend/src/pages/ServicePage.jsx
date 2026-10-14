@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import PageHeader from "@/components/PageHeader";
+import TiltImage from "@/components/TiltImage";
 import { useSite } from "@/context/SiteContext";
 
 export default function ServicePage() {
@@ -25,6 +26,17 @@ export default function ServicePage() {
   return (
     <main>
       <PageHeader eyebrow={s.tab} title={s.title} subtitle={s.desc} />
+
+      {s.image && (
+        <section className="mx-auto max-w-7xl px-6 pt-16 sm:pt-20 lg:px-12">
+          <Reveal>
+            <TiltImage src={s.image} alt={s.tab} className="aspect-[21/9] rounded-br-[80px]" parallax />
+            <div className="mt-4 border-t border-hairline pt-4">
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-steel">Fig. 01</span>
+            </div>
+          </Reveal>
+        </section>
+      )}
 
       <section className="mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:px-12" data-testid="service-items">
         <Reveal>

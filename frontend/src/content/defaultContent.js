@@ -63,6 +63,8 @@ export const defaultContent = {
         slug: "zawodnik-indywidualny",
         tab: "Dla Zawodnika Indywidualnego",
         title: "Zauważ swój potencjał",
+        image:
+          "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/e2b856ea83fe512a_1000059808.jpg",
         desc: "Praca indywidualna przeznaczona jest dla sportowców na każdym etapie kariery — od obiecujących juniorów po zawodników zawodowych. Podczas sesji 1-na-1 pracujemy nad obszarami, które decydują o tym, czy na zawodach potrafisz zaprezentować 100% umiejętności wypracowanych na treningach.",
         items: [
           { title: "Diagnoza i profilowanie mentalne", desc: "określenie Twoich mocnych stron, stylów radzenia sobie ze stresem oraz obszarów do rozwoju." },
@@ -76,6 +78,8 @@ export const defaultContent = {
         slug: "klub-i-sztab",
         tab: "Dla Klubu, Drużyny i Sztabu Szkoleniowego",
         title: "Buduj spójny zespół, efektywną komunikację i silną kulturę wygrywania",
+        image:
+          "https://static.prod-images.emergentagent.com/jobs/2d77bd59-9172-41d8-b02a-f64967bdc83c/images/bc1f00a5d95f7ef398727771f810eb73e32076bfa1a04574c565b322e73a8253.jpeg",
         desc: "Sukces zespołu to coś więcej niż suma indywidualnych umiejętności zawodników. Oferta dla klubów nastawiona jest na integrację grupy, usprawnienie przepływu informacji między zawodnikami a sztabem oraz stworzenie środowiska sprzyjającego długofalowemu rozwojowi.",
         items: [
           { title: "Warsztaty integracyjne (Team Building)", desc: "budowanie spójności grupy, zaufania oraz jasnego podziału ról w drużynie." },
@@ -88,6 +92,8 @@ export const defaultContent = {
         slug: "obozy-i-zgrupowania",
         tab: "Na Obozy i Zgrupowania Sportowe (Camps)",
         title: "Praktyczna wiedza mentalna zintegrowana z intensywnym treningiem fizycznym",
+        image:
+          "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/a4d728192dd6fbb5_1000059804.jpg",
         desc: "Obóz sportowy to idealne miejsce na przyswojenie nawyków mentalnych. Zapewniam interaktywne warsztaty połączone z ćwiczeniami praktycznymi, które młodzi i doświadczeni zawodnicy mogą natychmiast przetestować podczas codziennych treningów na zgrupowaniu.",
         items: [
           { title: "Modułowe warsztaty tematyczne", desc: "krótkie, angażujące zajęcia (np. „Jak radzić sobie z błędem w trakcie gry”, „Wyznaczanie celów”, „Pewność siebie w praktyce”)." },
@@ -100,6 +106,8 @@ export const defaultContent = {
         slug: "dla-osob-aktywnych",
         tab: "Dla Osób Aktywnych",
         title: "Łącz pasję sportową z życiem codziennym i przełamuj własne bariery",
+        image:
+          "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/55d64022b2ddd9af_1000059802.jpg",
         desc: "Sport rekreacyjny, przygotowania do maratonu, triathlonu czy pierwszych zawodów w życiu wymagają ogromnej dyscypliny i odporności psychicznej. Wsparcie mentalne pomaga utrzymać regularność, radzić sobie z brakiem czasu oraz czerpać maksymalną satysfakcję z aktywności fizycznej.",
         items: [
           { title: "Budowanie trwałych nawyków i motywacji", desc: "praca nad stałością treningową i pokonywaniem wymówek w codziennym harmonogramie." },
