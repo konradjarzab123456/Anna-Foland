@@ -30,7 +30,7 @@ export default function ServicePage() {
       {s.image && (
         <section className="mx-auto max-w-7xl px-6 pt-16 sm:pt-20 lg:px-12">
           <div className="grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-4">
+            <div className="self-center lg:col-span-4">
               <Reveal>
                 <TiltImage src={s.image} alt={s.tab} className="aspect-[3/4] rounded-br-[80px]" parallax />
                 <div className="mt-4 border-t border-hairline pt-4">
