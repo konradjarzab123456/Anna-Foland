@@ -94,6 +94,7 @@ export const defaultContent = {
         title: "Praktyczna wiedza mentalna zintegrowana z intensywnym treningiem fizycznym",
         image:
           "/photos/anna_led.jpg",
+        focus: "bottom",
         desc: "Obóz sportowy to idealne miejsce na przyswojenie nawyków mentalnych. Zapewniam interaktywne warsztaty połączone z ćwiczeniami praktycznymi, które młodzi i doświadczeni zawodnicy mogą natychmiast przetestować podczas codziennych treningów na zgrupowaniu.",
         items: [
           { title: "Modułowe warsztaty tematyczne", desc: "krótkie, angażujące zajęcia (np. „Jak radzić sobie z błędem w trakcie gry”, „Wyznaczanie celów”, „Pewność siebie w praktyce”)." },

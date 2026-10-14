@@ -32,7 +32,7 @@ export default function ServicePage() {
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="self-center lg:col-span-4">
               <Reveal>
-                <TiltImage src={s.image} alt={s.tab} className="aspect-[3/4] rounded-br-[80px]" parallax />
+                <TiltImage src={s.image} alt={s.tab} className="aspect-[3/4] rounded-br-[80px]" objectPosition={{ top: "50% 0%", bottom: "50% 100%", center: "50% 50%" }[s.focus] || ""} parallax />
                 <div className="mt-4 border-t border-hairline pt-4">
                   <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-steel">Fig. 01</span>
                 </div>

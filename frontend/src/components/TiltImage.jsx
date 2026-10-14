@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from "framer-motion";
 
-export default function TiltImage({ src, alt = "", className = "", imgClassName = "", parallax = false, eager = false }) {
+export default function TiltImage({ src, alt = "", className = "", imgClassName = "", objectPosition = "", parallax = false, eager = false }) {
   const ref = useRef(null);
   const mx = useMotionValue(0.5);
   const my = useMotionValue(0.5);
@@ -32,7 +32,7 @@ export default function TiltImage({ src, alt = "", className = "", imgClassName 
       data-testid="tilt-image"
     >
       <motion.div style={{ rotateX: rx, rotateY: ry, transformStyle: "preserve-3d" }} className="h-full w-full">
-        <img src={src} alt={alt} className={`h-full w-full object-cover object-center ${imgClassName}`} loading={eager ? "eager" : "lazy"} />
+        <img src={src} alt={alt} style={objectPosition ? { objectPosition } : undefined} className={`h-full w-full object-cover ${imgClassName || "object-center"}`} loading={eager ? "eager" : "lazy"} />
         <div className="spotlight" />
       </motion.div>
     </motion.div>
