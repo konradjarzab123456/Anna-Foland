@@ -28,10 +28,13 @@ export const defaultContent = {
   ],
   about: {
     eyebrow: "O firmie",
-    title: "Od 2008 roku łączymy architekturę z inżynierską dyscypliną wykonania.",
+    title: "Psychologia sportu. Silna głowa. Świadomy rozwój.",
     paragraphs: [
-      "Studio Verto to pracownia architektury i generalnego wykonawstwa. Pracujemy w modelu „jednego biura” — projekt, nadzór i realizacja powstają pod jednym dachem, dzięki czemu żadna decyzja nie ginie między etapami.",
-      "Zespół tworzą architekci, konstruktorzy i kierownicy budów z doświadczeniem w projektach reprezentacyjnych. Stawiamy na materiały sprawdzone w czasie, cyfrowe modelowanie informacji (BIM) i realny budżet zamiast obietnic.",
+      "Cześć. Jestem psychologiem sportu i wspieram osoby aktywne fizycznie w rozwijaniu potencjału mentalnego oraz skutecznym radzeniu sobie z wyzwaniami, które pojawiają się w sporcie i codziennym życiu. Należę do Polskiego Towarzystwa Psychologicznego oraz Sekcji Psychologii Sportu.",
+      "Łączę wiedzę psychologiczną z doświadczeniem własnej drogi sportowej – jako ultramaratonka wiem, jak wiele pracy, konsekwencji i gotowości mentalnej wymaga przekraczanie własnych granic. Wiem, że na długiej trasie przychodzi moment, w którym sama kondycja fizyczna przestaje wystarczać. Pojawia się zmęczenie, ból, zwątpienie, czasem pytanie: „Po co właściwie to robię?” I właśnie wtedy zaczyna się ta część sportu, która fascynuje mnie najbardziej – spotkanie z własną psychiką.",
+      "To, jak myślimy. Jak reagujemy na trudności? Co mówimy sobie w chwilach kryzysu? Czy potrafimy skupić się na tym, na co mamy wpływ? Czy umiemy zaufać sobie, kiedy wynik nie układa się po naszej myśli?",
+      "Pracuję zarówno z osobami uprawiającymi sport wyczynowo, jak i rekreacyjnie. Podczas indywidualnych konsultacji, warsztatów oraz zawodów pomagam rozwijać m.in. koncentrację, motywację, pewność siebie i odporność psychiczną, a także lepiej radzić sobie ze stresem, emocjami i presją wyniku.",
+      "Wspólnie pracujemy nie tylko nad lepszym wynikiem. Pracujemy nad tym, abyś potrafił_ świadomie wykorzystywać swój potencjał – w sporcie i poza nim.",
     ],
     image:
       "https://images.unsplash.com/photo-1763550662603-78aa2f2033bf?crop=entropy&cs=srgb&fm=jpg&q=85",
