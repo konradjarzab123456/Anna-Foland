@@ -103,6 +103,20 @@ export const defaultContent = {
         ],
       },
       {
+        slug: "dzieci-i-mlodziezy",
+        tab: "Psycholog sportu dzieci i młodzieży",
+        title: "Zbuduj solidne fundamenty mentalne od najmłodszych lat",
+        image:
+          "/photos/anna_blazer.jpg",
+        desc: "Dzieci i młodzież uprawiająca sport potrzebują wsparcia dopasowanego do etapu rozwoju. Pracuję z młodymi zawodnikami, rodzicami i trenerami, aby sport uczył dyscypliny, radzenia sobie z emocjami i zdrowej motywacji — bez nadmiernej presji wyniku.",
+        items: [
+          { title: "Diagnoza i rozmowa z dzieckiem i rodzicem", desc: "poznajemy sytuację, cele i wyzwania młodego sportowca." },
+          { title: "Trening mentalny dopasowany do wieku", desc: "koncentracja, emocje i motywacja w formie zabawy i ćwiczeń." },
+          { title: "Wsparcie rodziców", desc: "jak mądrze kibicować, wspierać i nie nakładać presji wyniku." },
+          { title: "Współpraca z trenerem i szkołą", desc: "spójne środowisko wokół młodego zawodnika." },
+        ],
+      },
+      {
         slug: "dla-osob-aktywnych",
         tab: "Dla Osób Aktywnych",
         title: "Łącz pasję sportową z życiem codziennym i przełamuj własne bariery",
@@ -197,4 +211,5 @@ export const serviceOptions = [
   "Dla Klubu, Drużyny i Sztabu Szkoleniowego",
   "Na Obozy i Zgrupowania Sportowe (Camps)",
   "Dla Osób Aktywnych",
+  "Psycholog sportu dzieci i młodzieży",
 ];

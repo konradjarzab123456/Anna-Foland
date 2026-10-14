@@ -6,10 +6,11 @@ import Reveal from "@/components/Reveal";
 
 const TABS = [
   { id: "o-mnie", label: "O mnie", path: "/o-mnie" },
-  { id: "zawodnik", label: "Dla Zawodnika", path: "/oferta/zawodnik-indywidualny" },
-  { id: "klub", label: "Dla Klubu i Sztabu", path: "/oferta/klub-i-sztab" },
-  { id: "camps", label: "Obozy (Camps)", path: "/oferta/obozy-i-zgrupowania" },
-  { id: "aktywni", label: "Dla Aktywnych", path: "/oferta/dla-osob-aktywnych" },
+  { id: "zawodnik", label: "Zawodnik", path: "/oferta/zawodnik-indywidualny" },
+  { id: "klub", label: "Klub i Sztab", path: "/oferta/klub-i-sztab" },
+  { id: "camps", label: "Camps", path: "/oferta/obozy-i-zgrupowania" },
+  { id: "dzieci", label: "Dzieci i Młodzież", path: "/oferta/dzieci-i-mlodziezy" },
+  { id: "aktywni", label: "Aktywni", path: "/oferta/dla-osob-aktywnych" },
   { id: "kontakt", label: "Kontakt", path: "/kontakt" },
 ];
 
