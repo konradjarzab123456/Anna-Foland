@@ -1,6 +1,6 @@
 export const defaultContent = {
-  siteName: "Studio Verto",
-  siteSuffix: "Architektura & Build",
+  siteName: "Anna Foland",
+  siteSuffix: "psycholog sportu",
   tagline: "Precyzja architektoniczna, inżynieria jutra",
   hero: {
     eyebrow: "Studio architektoniczne · Warszawa",
