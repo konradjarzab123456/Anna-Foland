@@ -77,7 +77,7 @@ export default function Home() {
                   <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <Link
-                  to="/realizacje"
+                  to="/o-firmie"
                   data-testid="hero-cta-secondary"
                   className="link-underline font-mono text-xs uppercase tracking-[0.18em] text-ink"
                 >
@@ -102,7 +102,7 @@ export default function Home() {
               />
               <div className="mt-4 flex items-center justify-between border-t border-hairline pt-4">
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-steel">
-                  Fig. 01 — Fasada, Warszawa
+                  Fig. 01
                 </span>
                 <span className="font-mono text-[10px] text-steel">© {content.siteName}</span>
               </div>
@@ -127,25 +127,40 @@ export default function Home() {
 
       <Marquee items={content.marquee} />
 
-      {/* Executive statement */}
-      <section className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12">
+      {/* Bio */}
+      <section className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12" data-testid="home-bio">
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-2">
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-graphite">Manifest</p>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-graphite">Kim jestem</p>
           </Reveal>
           <div className="lg:col-span-10">
             <Reveal delay={0.1}>
-              <p className="font-display text-3xl font-light leading-[1.2] text-ink sm:text-5xl" data-testid="statement-text">
-                {content.tagline}
+              <p className="max-w-4xl font-display text-2xl font-light leading-[1.3] text-ink sm:text-4xl" data-testid="statement-text">
+                {content.about.paragraphs[1] || ""}
               </p>
             </Reveal>
-            <Reveal delay={0.25}>
+            <Reveal delay={0.2}>
+              <p className="mt-10 max-w-3xl text-lg italic leading-relaxed text-graphite" data-testid="bio-quote">
+                {content.about.paragraphs[2] || ""}
+              </p>
+            </Reveal>
+            <Reveal delay={0.3}>
+              <p className="mt-10 max-w-3xl leading-relaxed text-graphite">
+                {content.about.paragraphs[3] || ""}
+              </p>
+            </Reveal>
+            <Reveal delay={0.35}>
+              <p className="mt-6 max-w-3xl leading-relaxed text-graphite">
+                {content.about.paragraphs[4] || ""}
+              </p>
+            </Reveal>
+            <Reveal delay={0.4}>
               <Link
                 to="/o-firmie"
                 data-testid="statement-about-link"
                 className="mt-10 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-ink"
               >
-                Poznaj studio <ArrowUpRight size={14} />
+                Więcej o mnie <ArrowUpRight size={14} />
               </Link>
             </Reveal>
           </div>
