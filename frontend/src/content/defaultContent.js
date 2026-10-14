@@ -108,12 +108,16 @@ export const defaultContent = {
         title: "Zbuduj solidne fundamenty mentalne od najmłodszych lat",
         image:
           "/photos/anna_blazer.jpg",
-        desc: "Dzieci i młodzież uprawiająca sport potrzebują wsparcia dopasowanego do etapu rozwoju. Pracuję z młodymi zawodnikami, rodzicami i trenerami, aby sport uczył dyscypliny, radzenia sobie z emocjami i zdrowej motywacji — bez nadmiernej presji wyniku.",
+        desc: "Dzieci i młodzież w sporcie przeżywają te momenty równie mocno – łącząc treningi ze szkołą, presją wyników i własnym, dynamicznym rozwojem. Moją misją jest towarzyszenie młodym zawodnikom w budowaniu trwałej odporności psychicznej, pewności siebie i czerpaniu prawdziwej radości ze sportu. Pomagam im rozumieć własne emocje, radzić sobie ze stresem i odnajdywać motywację zarówno w chwilach sukcesu, jak i wtedy, gdy pojawiają się trudności.",
         items: [
-          { title: "Diagnoza i rozmowa z dzieckiem i rodzicem", desc: "poznajemy sytuację, cele i wyzwania młodego sportowca." },
-          { title: "Trening mentalny dopasowany do wieku", desc: "koncentracja, emocje i motywacja w formie zabawy i ćwiczeń." },
-          { title: "Wsparcie rodziców", desc: "jak mądrze kibicować, wspierać i nie nakładać presji wyniku." },
-          { title: "Współpraca z trenerem i szkołą", desc: "spójne środowisko wokół młodego zawodnika." },
+          { title: "Radzenie sobie ze stresem i presją startową", desc: "nauka regulacji emocji, kontroli napięcia i opanowania w sytuacjach stresowych." },
+          { title: "Budowanie pewności siebie i wiary w swoje możliwości", desc: "rozwijanie stabilnego poczucia własnej wartości, niezależnego wyłącznie od wyników." },
+          { title: "Koncentracja i uwaga", desc: "umiejętność skupienia się na zadaniu na boisku, korcie, bieżni czy basenie." },
+          { title: "Radzenie sobie z porażką i błędami", desc: "nauka wyciągania wniosków z niepowodzeń i szybkiego powrotu do gry bez utraty motywacji." },
+          { title: "Radość ze sportu i ochrona przed wypaleniem", desc: "podtrzymywanie pasji i budowanie zdrowej równowagi między sportem a życiem prywatnym." },
+          { title: "Powrót do sportu po kontuzji", desc: "praca nad lękiem przed ponownym urazem i bezpiecznym odbudowaniem zaufania do własnego ciała." },
+          { title: "Konsultacje dla rodziców", desc: "wsparcie rodziców w mądrym i budującym towarzyszeniu dziecku w jego sportowej pasji." },
+          { title: "Jak pracuję?", desc: "Stwarzam bezpieczną, życzliwą i pełną akceptacji przestrzeń, dostosowaną do wieku oraz dojrzałości emocjonalnej młodego zawodnika. Uczę umiejętności mentalnych, które pomagają nie tylko na boisku czy zawodach - stają się wartościowymi kompetencjami na całe życie – w szkole, relacjach z rówieśnikami i codziennych wyzwaniach." },
         ],
       },
       {
