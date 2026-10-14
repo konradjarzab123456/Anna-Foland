@@ -32,7 +32,7 @@ export default function TiltImage({ src, alt = "", className = "", imgClassName 
       data-testid="tilt-image"
     >
       <motion.div style={{ rotateX: rx, rotateY: ry, transformStyle: "preserve-3d" }} className="h-full w-full">
-        <img src={src} alt={alt} className={`h-full w-full object-cover ${imgClassName}`} loading={eager ? "eager" : "lazy"} />
+        <img src={src} alt={alt} className={`h-full w-full object-cover object-center ${imgClassName}`} loading={eager ? "eager" : "lazy"} />
         <div className="spotlight" />
       </motion.div>
     </motion.div>
