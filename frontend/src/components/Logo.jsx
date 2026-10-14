@@ -20,7 +20,7 @@ export default function Logo({ content, onClick }) {
       <span className="leading-none">
         <span
           className="block whitespace-nowrap text-[1.8rem] leading-tight text-ink first-letter:text-[3.1rem] first-letter:leading-none"
-          style={{ fontFamily: "'Great Vibes', cursive" }}
+          style={{ fontFamily: "'Sacramento', cursive" }}
         >
           {content.siteName}
         </span>

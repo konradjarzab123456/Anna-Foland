@@ -27,7 +27,7 @@ export default function Footer() {
                 <span>
                   <span
                     className="block whitespace-nowrap text-4xl leading-tight text-paper first-letter:text-7xl first-letter:leading-none"
-                    style={{ fontFamily: "'Great Vibes', cursive" }}
+                    style={{ fontFamily: "'Sacramento', cursive" }}
                   >
                     {content.siteName}
                   </span>
