@@ -19,8 +19,10 @@ export default function Logo({ content, onClick }) {
     >
       <LogoMark />
       <span className="leading-none">
-        <span className="block font-display text-2xl tracking-wide text-ink">{content.siteName}</span>
-        <span className="mt-0.5 block text-[9px] uppercase tracking-[0.32em] text-graphite">
+        <span className="block whitespace-nowrap font-display text-xl tracking-wide text-ink">
+          {content.siteName}
+        </span>
+        <span className="mt-1 block whitespace-nowrap text-[8px] uppercase tracking-[0.28em] text-graphite">
           {content.siteSuffix}
         </span>
       </span>

@@ -45,16 +45,6 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={content.contact.booksy || "https://annafoland.booksy.com"}
-            target="_blank"
-            rel="noreferrer"
-            data-testid="cta-consultation-btn"
-            className="group hidden items-center gap-2 rounded-full bg-ink px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-paper transition-colors hover:bg-[#1F2937] sm:inline-flex"
-          >
-            Umów konsultację
-            <span className="h-1.5 w-1.5 rounded-full bg-gold transition-transform duration-300 group-hover:scale-[1.8]" />
-          </a>
           <button
             data-testid="nav-mobile-toggle"
             aria-label="Menu"

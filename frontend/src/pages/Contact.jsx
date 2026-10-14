@@ -57,13 +57,19 @@ export default function Contact() {
                   target="_blank"
                   rel="noreferrer"
                   data-testid="contact-booksy-button"
-                  className="group flex items-center justify-between border border-hairline bg-white p-6 transition-all duration-300 hover:border-ink"
+                  className="group flex flex-col border border-hairline bg-white p-6 transition-all duration-300 hover:border-ink"
                 >
-                  <span>
+                  <span className="flex items-center justify-between">
                     <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">Rezerwacja terminów</span>
-                    <span className="mt-2 block font-display text-2xl font-light text-ink">Zapis przez Booksy</span>
+                    <CalendarCheck size={20} className="text-gold transition-transform duration-300 group-hover:scale-110" />
                   </span>
-                  <CalendarCheck size={22} className="text-gold transition-transform duration-300 group-hover:scale-110" />
+                  <span className="mt-2 block font-display text-2xl font-light text-ink">Zapis przez Booksy</span>
+                  <span
+                    data-testid="contact-consultation-button"
+                    className="mt-5 inline-flex items-center justify-center gap-3 rounded-full bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-paper transition-colors group-hover:bg-[#1F2937]"
+                  >
+                    Umów konsultację
+                  </span>
                 </a>
 
                 <div>
