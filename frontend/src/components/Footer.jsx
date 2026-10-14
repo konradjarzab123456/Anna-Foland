@@ -27,7 +27,7 @@ export default function Footer() {
                 <LogoMark className="h-14 w-14" />
                 <span>
                   <span
-                    className="block whitespace-nowrap text-4xl leading-tight text-paper first-letter:text-7xl first-letter:leading-none"
+                    className="block whitespace-nowrap text-4xl leading-tight text-paper"
                     style={{ fontFamily: "'Sacramento', cursive" }}
                   >
                     {content.siteName}
