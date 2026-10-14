@@ -7,7 +7,6 @@ import { useSite } from "@/context/SiteContext";
 import { EASE } from "@/components/Reveal";
 
 const TABS = [
-  { id: "start", label: "Start", path: "/" },
   { id: "o-mnie", label: "O mnie", path: "/o-mnie" },
   { id: "zawodnik", label: "Dla Zawodnika", full: "Dla Zawodnika Indywidualnego", path: "/oferta/zawodnik-indywidualny" },
   { id: "klub", label: "Dla Klubu i Sztabu", full: "Dla Klubu, Drużyny i Sztabu Szkoleniowego", path: "/oferta/klub-i-sztab" },

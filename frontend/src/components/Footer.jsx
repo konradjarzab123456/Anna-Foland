@@ -5,7 +5,6 @@ import { useSite } from "@/context/SiteContext";
 import Reveal from "@/components/Reveal";
 
 const TABS = [
-  { id: "start", label: "Start", path: "/" },
   { id: "o-mnie", label: "O mnie", path: "/o-mnie" },
   { id: "zawodnik", label: "Dla Zawodnika", path: "/oferta/zawodnik-indywidualny" },
   { id: "klub", label: "Dla Klubu i Sztabu", path: "/oferta/klub-i-sztab" },
