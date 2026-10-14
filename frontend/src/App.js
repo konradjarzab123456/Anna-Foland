@@ -9,6 +9,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Offer from "@/pages/Offer";
 import Works from "@/pages/Works";
+import ServicePage from "@/pages/ServicePage";
 import Contact from "@/pages/Contact";
 import Admin from "@/pages/Admin";
 import { Toaster } from "@/components/ui/sonner";
@@ -69,6 +70,7 @@ function SiteLayout() {
         <Route path="/" element={<Home />} />
         <Route path="/o-firmie" element={<About />} />
         <Route path="/oferta" element={<Offer />} />
+        <Route path="/oferta/:slug" element={<ServicePage />} />
         <Route path="/realizacje" element={<Works />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="*" element={<Home />} />

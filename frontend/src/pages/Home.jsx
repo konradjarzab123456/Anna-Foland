@@ -209,13 +209,13 @@ export default function Home() {
             {content.offer.services.map((s, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <Link
-                  to="/oferta"
+                  to={`/oferta/${s.slug || ""}`}
                   data-testid={`service-row-${i}`}
                   className="service-row group flex items-baseline justify-between border-b border-hairline py-8 first:border-t"
                 >
                   <div className="flex items-baseline gap-8">
                     <span className="font-mono text-xs text-gold">{String(i + 1).padStart(2, "0")}</span>
-                    <h3 className="font-display text-2xl font-light text-ink sm:text-3xl">{s.title}</h3>
+                    <h3 className="font-display text-2xl font-light text-ink sm:text-3xl">{s.tab || s.title}</h3>
                   </div>
                   <ArrowUpRight size={20} className="shrink-0 text-steel transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-gold" />
                 </Link>

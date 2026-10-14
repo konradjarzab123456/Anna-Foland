@@ -55,6 +55,54 @@ function ObjectList({ label, items, fields, make, onChange }) {
                       onChange={(e) => upd(i, f.k, asArr(e.target.value))}
                       className={inputCls + " resize-y"}
                     />
+                  ) : f.sublist ? (
+                    <div className="mt-2 space-y-3">
+                      {(Array.isArray(it[f.k]) ? it[f.k] : []).map((sub, j) => (
+                        <div key={j} className="flex items-start gap-3 border border-hairline p-3">
+                          <div className="flex-1 space-y-2">
+                            {f.sublist.fields.map((sf) => (
+                              <label key={sf.k} className={`block ${sf.area ? "" : ""}`}>
+                                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-steel">{sf.label}</span>
+                                {sf.area ? (
+                                  <textarea
+                                    rows={sf.rows || 2}
+                                    value={sub[sf.k] || ""}
+                                    onChange={(e) => {
+                                      const arr = (it[f.k] || []).map((x, j2) => (j2 === j ? { ...x, [sf.k]: e.target.value } : x));
+                                      upd(i, f.k, arr);
+                                    }}
+                                    className={inputCls + " resize-y"}
+                                  />
+                                ) : (
+                                  <input
+                                    value={sub[sf.k] || ""}
+                                    onChange={(e) => {
+                                      const arr = (it[f.k] || []).map((x, j2) => (j2 === j ? { ...x, [sf.k]: e.target.value } : x));
+                                      upd(i, f.k, arr);
+                                    }}
+                                    className={inputCls}
+                                  />
+                                )}
+                              </label>
+                            ))}
+                          </div>
+                          <button
+                            onClick={() => upd(i, f.k, (it[f.k] || []).filter((_, j2) => j2 !== j))}
+                            className="mt-6 text-red-500 hover:text-red-600"
+                            data-testid={`${label}-item-${i}-point-remove-${j}`}
+                          >
+                            <Trash2 size={13} />
+                          </button>
+                        </div>
+                      ))}
+                      <button
+                        onClick={() => upd(i, f.k, [...(it[f.k] || []), f.sublist.make()])}
+                        className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.15em] text-ink hover:text-gold"
+                        data-testid={`${label}-item-${i}-point-add`}
+                      >
+                        <Plus size={12} /> Dodaj punkt
+                      </button>
+                    </div>
                   ) : (
                     <input value={it[f.k] || ""} onChange={(e) => upd(i, f.k, e.target.value)} className={inputCls} />
                   )}
@@ -270,22 +318,23 @@ export default function Admin() {
           label="Usługi"
           items={draft.offer.services}
           onChange={(v) => upd("offer.services", v)}
-          make={() => ({ title: "Nowa usługa", desc: "Opis", items: [] })}
+          make={() => ({ slug: "nowa-zakladka", tab: "Nazwa zakładki", title: "Nagłówek", desc: "", items: [] })}
           fields={[
-            { k: "title", label: "Tytuł" },
-            { k: "desc", label: "Opis", area: true, rows: 2 },
-            { k: "items", label: "Pozycje (każda w nowej linii)", lines: true, rows: 4 },
-          ]}
-        />
-        <ObjectList
-          label="Proces"
-          items={draft.offer.process}
-          onChange={(v) => upd("offer.process", v)}
-          make={() => ({ step: "05", title: "Krok", desc: "Opis" })}
-          fields={[
-            { k: "step", label: "Nr" },
-            { k: "title", label: "Tytuł" },
-            { k: "desc", label: "Opis", area: true, rows: 2 },
+            { k: "slug", label: "Adres URL (slug)" },
+            { k: "tab", label: "Nazwa zakładki" },
+            { k: "title", label: "Nagłówek", area: true, rows: 2 },
+            { k: "desc", label: "Opis", area: true, rows: 4 },
+            {
+              k: "items",
+              label: "Co obejmuje współpraca",
+              sublist: {
+                make: () => ({ title: "Nowy punkt", desc: "" }),
+                fields: [
+                  { k: "title", label: "Tytuł punktu" },
+                  { k: "desc", label: "Opis", area: true, rows: 2 },
+                ],
+              },
+            },
           ]}
         />
       </div>

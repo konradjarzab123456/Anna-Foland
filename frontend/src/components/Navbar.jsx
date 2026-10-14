@@ -30,16 +30,44 @@ export default function Navbar() {
 
         <nav className="hidden items-center gap-9 lg:flex">
           {TABS.map((t) => (
-            <NavLink
-              key={t.id}
-              to={t.path}
-              data-testid={`nav-link-${t.id}`}
-              className={`link-underline font-mono text-xs uppercase tracking-[0.2em] transition-colors ${
-                isActive(t.path) ? "is-active text-ink" : "text-graphite hover:text-ink"
-              }`}
-            >
-              {t.label}
-            </NavLink>
+            <div key={t.id} className="relative group">
+              <NavLink
+                to={t.path}
+                data-testid={`nav-link-${t.id}`}
+                className={`link-underline font-mono text-xs uppercase tracking-[0.2em] transition-colors ${
+                  isActive(t.path) ? "is-active text-ink" : "text-graphite hover:text-ink"
+                }`}
+              >
+                {t.label}
+              </NavLink>
+              {t.id === "oferta" && (
+                <div
+                  className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100"
+                  data-testid="nav-oferta-dropdown"
+                >
+                  <div className="w-80 border border-hairline bg-white p-3 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.08)]">
+                    {content.offer.services.map((s) => (
+                      <Link
+                        key={s.slug}
+                        to={`/oferta/${s.slug}`}
+                        data-testid={`nav-oferta-${s.slug}`}
+                        className="block px-4 py-3 transition-colors hover:bg-subtle"
+                      >
+                        <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-gold">{s.tab}</span>
+                        <span className="mt-1 block font-display text-lg leading-tight text-ink">{s.title}</span>
+                      </Link>
+                    ))}
+                    <Link
+                      to="/oferta"
+                      data-testid="nav-oferta-all"
+                      className="mt-2 block border-t border-hairline px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-graphite transition-colors hover:text-ink"
+                    >
+                      Wszystkie usługi
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </nav>
 
@@ -88,6 +116,18 @@ export default function Navbar() {
                 >
                   {t.label}
                 </Link>
+                {t.id === "oferta" &&
+                  content.offer.services.map((s) => (
+                    <Link
+                      key={s.slug}
+                      to={`/oferta/${s.slug}`}
+                      data-testid={`nav-mobile-oferta-${s.slug}`}
+                      onClick={() => setOpen(false)}
+                      className="block border-b border-hairline py-2.5 pl-6 font-mono text-[11px] uppercase tracking-[0.18em] text-graphite"
+                    >
+                      — {s.tab}
+                    </Link>
+                  ))}
               </motion.div>
             ))}
           </motion.nav>
