@@ -173,7 +173,7 @@ export default function Home() {
       <section className="border-t border-hairline bg-subtle/60">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12">
           <Reveal>
-            <h2 className="font-display text-3xl font-light tracking-tight sm:text-5xl">Nasze zakresy</h2>
+            <h2 className="font-display text-3xl font-light tracking-tight sm:text-5xl">Dla kogo?</h2>
           </Reveal>
           <div className="mt-12">
             {content.offer.services.map((s, i) => (

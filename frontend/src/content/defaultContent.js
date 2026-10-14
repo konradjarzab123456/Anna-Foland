@@ -1,7 +1,7 @@
 export const defaultContent = {
   siteName: "Anna Foland",
   siteSuffix: "psycholog sportu",
-  tagline: "Psychologia sportu. Twój codzienny support.",
+  tagline: "Psycholog sportu. Twój codzienny support.",
   hero: {
     eyebrow: "Psycholog sportu",
     lines: ["PSYCHOLOGIA SPORTU.", "SILNA GŁOWA.", "ŚWIADOMY ROZWÓJ."],
