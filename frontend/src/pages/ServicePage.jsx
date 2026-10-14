@@ -56,7 +56,7 @@ export default function ServicePage() {
                       <Reveal key={i} delay={i * 0.06}>
                         <div className="flex gap-6 border-b border-hairline py-8 first:border-t sm:gap-10" data-testid={`service-item-${i}`}>
                           <span className="pt-1 font-mono text-xs text-gold">{String(i + 1).padStart(2, "0")}</span>
-                          <p className="text-lg leading-relaxed text-graphite">
+                          <p className="text-base leading-relaxed text-graphite">
                             <span className="font-medium text-ink">{it.title}</span> — {it.desc}
                           </p>
                         </div>
@@ -78,7 +78,7 @@ export default function ServicePage() {
             </Reveal>
             {sec.lead && (
               <Reveal delay={0.1}>
-                <p className="mt-6 max-w-3xl text-lg leading-relaxed text-graphite">{sec.lead}</p>
+                <p className="mt-6 max-w-3xl text-base leading-relaxed text-graphite">{sec.lead}</p>
               </Reveal>
             )}
             {sec.items && sec.items.length > 0 && (
@@ -87,7 +87,7 @@ export default function ServicePage() {
                   <Reveal key={j} delay={j * 0.05}>
                     <div className="flex gap-6 border-b border-hairline py-7 first:border-t sm:gap-10" data-testid={`service-section-${i}-item-${j}`}>
                       <span className="pt-1 font-mono text-xs text-gold">{String(j + 1).padStart(2, "0")}</span>
-                      <p className="text-lg leading-relaxed text-graphite">
+                      <p className="text-base leading-relaxed text-graphite">
                         <span className="font-medium text-ink">{it.title}</span> — {it.desc}
                       </p>
                     </div>
