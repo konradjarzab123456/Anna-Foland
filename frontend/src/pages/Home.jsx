@@ -56,7 +56,7 @@ export default function Home() {
 
             <MaskedLines
               lines={content.hero.lines}
-              className="mt-8 font-display text-[clamp(2.6rem,7.5vw,5.4rem)] font-light leading-[1.02] tracking-tight text-ink"
+              className="mt-8 font-display text-[clamp(1.75rem,3vw,2.75rem)] font-light leading-[1.1] tracking-tight text-ink"
               delay={0.35}
             />
 

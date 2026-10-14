@@ -9,7 +9,7 @@ export default function PageHeader({ eyebrow, title, subtitle }) {
         </Reveal>
         <MaskedLines
           lines={Array.isArray(title) ? title : [title]}
-          className="mt-6 font-display text-4xl font-light leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl"
+          className="mt-6 font-display text-2xl font-light leading-[1.15] tracking-tight text-ink sm:text-3xl lg:text-4xl"
           delay={0.1}
         />
         {subtitle && (

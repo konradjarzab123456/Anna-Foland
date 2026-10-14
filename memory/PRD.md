@@ -18,9 +18,10 @@
 - Formularz kontaktowy zapisany w bazie.
 
 ## Implemented (2026-10-14)
-- Pełny frontend 6 widoków; kinetic masked-line hero, marquee, tilt+spotlight+parallax, kalkulator wyceny, filtry+modal realizacji, formularze z toastami, lenis smooth scroll, ErrorBoundary, logo SVG + favicon.
+- Pełny frontend 6 widoków; kinetic masked-line hero, marquee, tilt+spotlight+parallax, filtry+modal realizacji, formularze z toastami, lenis smooth scroll, ErrorBoundary, logo SVG + favicon.
 - Backend: JWT auth wg playbooka (seed admina, lockout 5 prób/15 min), content API, contact API. Zweryfikowano curl-em: login, /me, PUT/GET content (401 bez tokenu), POST contact, GET messages.
 - Zrzuty: desktop 1440 + mobile 390 (home, realizacje filtr+modal, oferta kalkulator, admin login→edycja→zapis).
+- Rebrand: treści Anny Foland (psycholog sportu) w hero, bio, O firmie; oferta = 4 oddzielne zakładki /oferta/{slug} z dropdownem w nawigacji; własne logo (mountain, favicon + navbar/footer) i zdjęcia (hero z medalami, portret w O mnie) z customer-assets; zmniejszona czcionka hero i nagłówków podstron.
 
 ## Treści
 - WSZYSTKIE treści (nazwa "Studio Verto", liczby typu "280+ projektów", "od 2008", nagrody, dane rejestrowe) są TREŚCIĄ DEMONSTRACYJNĄ / placeholderem — do podmiany w /admin. Notka o tym jest w stopce strony.

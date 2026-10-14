@@ -1,9 +1,13 @@
-export const LogoMark = ({ className = "h-9 w-9" }) => (
-  <svg viewBox="0 0 36 36" fill="none" className={className} aria-hidden="true">
-    <rect width="36" height="36" rx="4" fill="#0A0D14" />
-    <path d="M10 26V10L19 26V10" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="square" />
-    <path d="M26 10L20 18L26 26" stroke="#C5A059" strokeWidth="2" strokeLinecap="square" />
-  </svg>
+export const LOGO_URL =
+  "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/f692c7d781c09792_1000059810.jpg";
+
+export const LogoMark = ({ className = "h-10 w-10" }) => (
+  <img
+    src={LOGO_URL}
+    alt="Psycholog sportu — logo"
+    className={`${className} rounded-sm object-cover`}
+    data-testid="logo-mark"
+  />
 );
 
 export default function Logo({ content, onClick }) {

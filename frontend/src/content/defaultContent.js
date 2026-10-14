@@ -10,7 +10,7 @@ export const defaultContent = {
     ctaPrimary: "Umów konsultację",
     ctaSecondary: "Poznaj mnie",
     image:
-      "https://images.unsplash.com/photo-1530143311094-34d807799e8f?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/55d64022b2ddd9af_1000059802.jpg",
   },
   stats: [
     { value: "1:1", label: "indywidualne konsultacje" },
@@ -37,7 +37,7 @@ export const defaultContent = {
       "Wspólnie pracujemy nie tylko nad lepszym wynikiem. Pracujemy nad tym, abyś potrafił_ świadomie wykorzystywać swój potencjał – w sporcie i poza nim.",
     ],
     image:
-      "https://images.unsplash.com/photo-1763550662603-78aa2f2033bf?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/a4d728192dd6fbb5_1000059804.jpg",
     values: [
       { title: "Precyzja", desc: "Detal projektujemy zanim powstanie ściana. Każdy węzeł ma rysunek i wykonawcę." },
       { title: "Zrównoważony rozwój", desc: "Energooszczędne bryły, materiały z certyfikatami, budynki gotowe na LEED." },
