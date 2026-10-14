@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
+import { Facebook, Instagram, CalendarCheck } from "lucide-react";
 import { LogoMark } from "@/components/Logo";
 import { useSite } from "@/context/SiteContext";
 import Reveal from "@/components/Reveal";
 
 const TABS = [
-  { label: "Start", path: "/" },
-  { label: "O firmie", path: "/o-firmie" },
-  { label: "Oferta", path: "/oferta" },
-  { label: "Realizacje", path: "/realizacje" },
-  { label: "Kontakt", path: "/kontakt" },
+  { id: "start", label: "Start", path: "/" },
+  { id: "o-mnie", label: "O mnie", path: "/o-mnie" },
+  { id: "zawodnik", label: "Dla Zawodnika", path: "/oferta/zawodnik-indywidualny" },
+  { id: "klub", label: "Dla Klubu i Sztabu", path: "/oferta/klub-i-sztab" },
+  { id: "camps", label: "Obozy (Camps)", path: "/oferta/obozy-i-zgrupowania" },
+  { id: "aktywni", label: "Dla Aktywnych", path: "/oferta/dla-osob-aktywnych" },
+  { id: "kontakt", label: "Kontakt", path: "/kontakt" },
 ];
 
 export default function Footer() {
   const { content } = useSite();
+  const c = content.contact;
   return (
     <footer className="bg-dark text-paper" data-testid="site-footer">
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-12">
@@ -24,13 +28,44 @@ export default function Footer() {
                 <span className="font-display text-3xl font-light">{content.siteName}</span>
               </div>
               <p className="mt-6 max-w-md text-sm leading-relaxed text-paper/60">{content.tagline}</p>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                <a
+                  href={c.facebook || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  data-testid="footer-facebook-link"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-paper/20 text-paper/70 transition-colors hover:border-gold hover:text-gold"
+                >
+                  <Facebook size={16} />
+                </a>
+                <a
+                  href={c.instagram || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  data-testid="footer-instagram-link"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-paper/20 text-paper/70 transition-colors hover:border-gold hover:text-gold"
+                >
+                  <Instagram size={16} />
+                </a>
+                <a
+                  href={c.booksy || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-testid="footer-booksy-link"
+                  className="inline-flex items-center gap-2 rounded-full border border-paper/20 px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.15em] text-paper/70 transition-colors hover:border-gold hover:text-gold"
+                >
+                  <CalendarCheck size={14} /> Zapis przez Booksy
+                </a>
+              </div>
             </div>
             <nav className="flex flex-wrap gap-x-8 gap-y-3">
               {TABS.map((t) => (
                 <Link
-                  key={t.path}
+                  key={t.id}
                   to={t.path}
-                  data-testid={`footer-link-${t.label.toLowerCase().replace(" ", "-")}`}
+                  data-testid={`footer-link-${t.id}`}
                   className="link-underline font-mono text-xs uppercase tracking-[0.2em] text-paper/70 hover:text-paper"
                 >
                   {t.label}
@@ -40,12 +75,10 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-8 border-t border-paper/10 pt-8 text-sm text-paper/60 sm:grid-cols-3">
-          <p data-testid="footer-address">{content.contact.address}</p>
-          <p data-testid="footer-contact">
-            {content.contact.phone} · {content.contact.email}
-          </p>
-          <p className="sm:text-right" data-testid="footer-company">{content.contact.companyData}</p>
+        <div className="mt-16 border-t border-paper/10 pt-8 text-sm text-paper/60">
+          <a href={`mailto:${c.email || ""}`} data-testid="footer-email-link" className="link-underline">
+            {c.email}
+          </a>
         </div>
 
         <p className="mt-8 text-xs text-paper/40" data-testid="footer-note">{content.footer.note}</p>

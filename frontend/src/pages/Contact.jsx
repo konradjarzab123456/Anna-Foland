@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, FileText } from "lucide-react";
+import { Mail, Facebook, Instagram, CalendarCheck } from "lucide-react";
 import { toast } from "sonner";
 import Reveal from "@/components/Reveal";
 import PageHeader from "@/components/PageHeader";
@@ -7,12 +7,10 @@ import { useSite } from "@/context/SiteContext";
 import { serviceOptions } from "@/content/defaultContent";
 import api, { formatApiError } from "@/lib/api";
 
-const BUDGETS = ["Do 500 tys. zł", "500 tys. – 2 mln zł", "2 – 10 mln zł", "Powyżej 10 mln zł"];
-
 export default function Contact() {
   const { content } = useSite();
   const c = content.contact;
-  const [form, setForm] = useState({ name: "", email: "", phone: "", service: serviceOptions[0], budget: BUDGETS[0], message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", service: serviceOptions[0], message: "" });
   const [sending, setSending] = useState(false);
 
   const submit = async (e) => {
@@ -20,8 +18,8 @@ export default function Contact() {
     setSending(true);
     try {
       await api.post("/contact", form);
-      toast.success("Zapytanie wysłane. Odezwiemy się w ciągu 24 godzin.");
-      setForm({ name: "", email: "", phone: "", service: serviceOptions[0], budget: BUDGETS[0], message: "" });
+      toast.success("Zapytanie wysłane. Odezwię się w ciągu 24 godzin.");
+      setForm({ name: "", email: "", phone: "", service: serviceOptions[0], message: "" });
     } catch (err) {
       toast.error(formatApiError(err));
     } finally {
@@ -43,22 +41,56 @@ export default function Contact() {
           {/* Info */}
           <div className="lg:col-span-4">
             <Reveal>
-              <div className="space-y-8" data-testid="contact-info">
-                {[
-                  { icon: MapPin, label: "Biuro", value: c.address, testid: "contact-info-address" },
-                  { icon: Phone, label: "Telefon", value: c.phone, testid: "contact-info-phone" },
-                  { icon: Mail, label: "E-mail", value: c.email, testid: "contact-info-email" },
-                  { icon: Clock, label: "Godziny pracy", value: c.hours, testid: "contact-info-hours" },
-                  { icon: FileText, label: "Dane rejestrowe", value: c.companyData, testid: "contact-info-company" },
-                ].map((row, i) => (
-                  <div key={i} className="flex gap-5 border-b border-hairline pb-8" data-testid={row.testid}>
-                    <row.icon size={18} className="mt-1 shrink-0 text-gold" />
-                    <div>
-                      <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">{row.label}</p>
-                      <p className="mt-2 text-ink">{row.value}</p>
-                    </div>
+              <div className="space-y-10" data-testid="contact-info">
+                <div className="flex gap-5" data-testid="contact-info-email">
+                  <Mail size={18} className="mt-1 shrink-0 text-gold" />
+                  <div>
+                    <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">E-mail</p>
+                    <a href={`mailto:${c.email || ""}`} className="link-underline mt-2 inline-block text-ink">
+                      {c.email}
+                    </a>
                   </div>
-                ))}
+                </div>
+
+                <a
+                  href={c.booksy || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-testid="contact-booksy-button"
+                  className="group flex items-center justify-between border border-hairline bg-white p-6 transition-all duration-300 hover:border-ink"
+                >
+                  <span>
+                    <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">Rezerwacja terminów</span>
+                    <span className="mt-2 block font-display text-2xl font-light text-ink">Zapis przez Booksy</span>
+                  </span>
+                  <CalendarCheck size={22} className="text-gold transition-transform duration-300 group-hover:scale-110" />
+                </a>
+
+                <div>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">Social media</p>
+                  <div className="mt-4 flex items-center gap-3" data-testid="contact-socials">
+                    <a
+                      href={c.facebook || "#"}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Facebook"
+                      data-testid="contact-facebook-link"
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-graphite transition-colors hover:border-ink hover:text-ink"
+                    >
+                      <Facebook size={17} />
+                    </a>
+                    <a
+                      href={c.instagram || "#"}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Instagram"
+                      data-testid="contact-instagram-link"
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-graphite transition-colors hover:border-ink hover:text-ink"
+                    >
+                      <Instagram size={17} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </Reveal>
           </div>
@@ -87,12 +119,12 @@ export default function Contact() {
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      placeholder="jan@firma.pl"
+                      placeholder="jan@example.com"
                       className={inputCls}
                     />
                   </label>
                   <label className={labelCls}>
-                    <span className={labelSpan}>Telefon</span>
+                    <span className={labelSpan}>Telefon (opcjonalnie)</span>
                     <input
                       data-testid="contact-phone-input"
                       value={form.phone}
@@ -102,7 +134,7 @@ export default function Contact() {
                     />
                   </label>
                   <label className={labelCls}>
-                    <span className={labelSpan}>Zakres usług</span>
+                    <span className={labelSpan}>Zakres wsparcia</span>
                     <select
                       data-testid="contact-service-select"
                       value={form.service}
@@ -115,19 +147,6 @@ export default function Contact() {
                     </select>
                   </label>
                   <label className={`${labelCls} sm:col-span-2`}>
-                    <span className={labelSpan}>Szacowany budżet inwestycji</span>
-                    <select
-                      data-testid="contact-budget-select"
-                      value={form.budget}
-                      onChange={(e) => setForm({ ...form, budget: e.target.value })}
-                      className={inputCls}
-                    >
-                      {BUDGETS.map((b) => (
-                        <option key={b}>{b}</option>
-                      ))}
-                    </select>
-                  </label>
-                  <label className={`${labelCls} sm:col-span-2`}>
                     <span className={labelSpan}>Wiadomość *</span>
                     <textarea
                       data-testid="contact-message-input"
@@ -135,7 +154,7 @@ export default function Contact() {
                       rows={5}
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      placeholder="Opisz krótko swoją inwestycję: lokalizacja, metraż, etap…"
+                      placeholder="Opisz krótko, w czym mogę pomóc: sport, cele, wyzwania…"
                       className={`${inputCls} resize-none`}
                     />
                   </label>

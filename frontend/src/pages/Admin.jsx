@@ -362,11 +362,10 @@ export default function Admin() {
     "Kontakt": (
       <div className="space-y-6">
         <TextField label="Nagłówek" area value={draft.contact.title} onChange={(v) => upd("contact.title", v)} testid="field-contact-title" />
-        <TextField label="Adres" value={draft.contact.address} onChange={(v) => upd("contact.address", v)} testid="field-contact-address" />
-        <TextField label="Telefon" value={draft.contact.phone} onChange={(v) => upd("contact.phone", v)} testid="field-contact-phone" />
-        <TextField label="E-mail" value={draft.contact.email} onChange={(v) => upd("contact.email", v)} testid="field-contact-email" />
-        <TextField label="Godziny" value={draft.contact.hours} onChange={(v) => upd("contact.hours", v)} testid="field-contact-hours" />
-        <TextField label="Dane rejestrowe" value={draft.contact.companyData} onChange={(v) => upd("contact.companyData", v)} testid="field-contact-company" />
+        <TextField label="E-mail" value={draft.contact.email || ""} onChange={(v) => upd("contact.email", v)} testid="field-contact-email" />
+        <TextField label="Booksy — adres rezerwacji" value={draft.contact.booksy || ""} onChange={(v) => upd("contact.booksy", v)} testid="field-contact-booksy" />
+        <TextField label="Facebook — adres" value={draft.contact.facebook || ""} onChange={(v) => upd("contact.facebook", v)} testid="field-contact-facebook" />
+        <TextField label="Instagram — adres" value={draft.contact.instagram || ""} onChange={(v) => upd("contact.instagram", v)} testid="field-contact-instagram" />
         <TextField label="Stopka — nota" area rows={2} value={draft.footer.note} onChange={(v) => upd("footer.note", v)} testid="field-footer-note" />
       </div>
     ),

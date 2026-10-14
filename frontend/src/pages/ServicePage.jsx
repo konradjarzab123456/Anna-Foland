@@ -49,14 +49,16 @@ export default function ServicePage() {
               <h2 className="font-display text-3xl font-light text-ink sm:text-4xl">Porozmawiajmy o współpracy.</h2>
               <p className="mt-3 max-w-md text-graphite">Umów bezpłatną konsultację — dopasujemy formę wsparcia do Twoich potrzeb.</p>
             </div>
-            <Link
-              to="/kontakt"
+            <a
+              href={content.contact.booksy || "https://annafoland.booksy.com"}
+              target="_blank"
+              rel="noreferrer"
               data-testid="service-cta-button"
               className="group inline-flex items-center gap-3 rounded-full bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-paper transition-colors hover:bg-[#1F2937]"
             >
               Umów konsultację
               <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
+            </a>
           </div>
         </Reveal>
       </section>

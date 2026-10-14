@@ -68,6 +68,7 @@ function SiteLayout() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/o-mnie" element={<About />} />
         <Route path="/o-firmie" element={<About />} />
         <Route path="/oferta" element={<Offer />} />
         <Route path="/oferta/:slug" element={<ServicePage />} />

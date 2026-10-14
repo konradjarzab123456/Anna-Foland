@@ -68,14 +68,16 @@ export default function Home() {
 
             <Reveal delay={1.3} y={18}>
               <div className="mt-10 flex flex-wrap items-center gap-6">
-                <Link
-                  to="/kontakt"
+                <a
+                  href={content.contact.booksy || "https://annafoland.booksy.com"}
+                  target="_blank"
+                  rel="noreferrer"
                   data-testid="hero-cta-primary"
                   className="group inline-flex items-center gap-3 rounded-full bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-paper transition-colors hover:bg-[#1F2937]"
                 >
                   {content.hero.ctaPrimary}
                   <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                </a>
                 <Link
                   to="/o-firmie"
                   data-testid="hero-cta-secondary"
@@ -167,38 +169,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured works */}
-      <section className="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-12" data-testid="featured-works">
-        <Reveal>
-          <div className="mb-12 flex items-end justify-between">
-            <h2 className="font-display text-3xl font-light tracking-tight sm:text-5xl">Wybrane realizacje</h2>
-            <Link to="/realizacje" data-testid="featured-works-all" className="link-underline hidden font-mono text-xs uppercase tracking-[0.18em] text-graphite sm:block">
-              Wszystkie projekty
-            </Link>
-          </div>
-        </Reveal>
-        <div className="grid gap-8 md:grid-cols-2">
-          {featured.map((w, i) => (
-            <Reveal key={i} delay={i * 0.12} className={i === 0 ? "md:col-span-2" : ""}>
-              <Link to="/realizacje" className="group block" data-testid={`project-card-item-${i}`}>
-                <div className={`overflow-hidden ${i === 0 ? "aspect-[16/9]" : "aspect-[4/3]"} rounded-sm`}>
-                  <img src={w.image} alt={w.title} loading="lazy" className="img-treat h-full w-full object-cover" />
-                </div>
-                <div className="mt-5 flex items-baseline justify-between border-t border-hairline pt-4">
-                  <div>
-                    <h3 className="font-display text-2xl font-light text-ink">{w.title}</h3>
-                    <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">
-                      {w.category} · {w.location}
-                    </p>
-                  </div>
-                  <span className="font-mono text-xs text-steel">{w.year}</span>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* Scopes */}
       <section className="border-t border-hairline bg-subtle/60">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12">
@@ -225,25 +195,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Certifications */}
-      <section className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12">
-        <div className="grid gap-12 lg:grid-cols-2">
-          <Reveal>
-            <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">Certyfikaty i nagrody</h2>
-          </Reveal>
-          <div>
-            {content.about.awards.map((a, i) => (
-              <Reveal key={i} delay={i * 0.1}>
-                <p className="flex items-center gap-4 border-b border-hairline py-5 text-graphite" data-testid={`award-item-${i}`}>
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                  {a}
-                </p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Quick contact */}
       <section className="border-t border-hairline">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 sm:py-32 lg:grid-cols-2 lg:px-12">
@@ -251,13 +202,17 @@ export default function Home() {
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-graphite">Szybki kontakt</p>
               <h2 className="mt-6 font-display text-3xl font-light leading-tight tracking-tight sm:text-5xl">
-                Opowiedz nam o swojej inwestycji.
+                Porozmawiaj o swoim rozwoju.
               </h2>
               <p className="mt-6 max-w-md text-graphite">
-                Odpowiadamy w ciągu 24 godzin roboczych. Pełny formularz znajdziesz w zakładce{" "}
+                Odpowiadam w ciągu 24 godzin roboczych. Pełny formularz znajdziesz w zakładce{" "}
                 <Link to="/kontakt" className="link-underline text-ink" data-testid="quick-contact-full-link">
                   Kontakt
                 </Link>
+                , a wizyty rezerwujesz przez{" "}
+                <a href={content.contact.booksy || "#"} target="_blank" rel="noreferrer" className="link-underline text-ink" data-testid="quick-contact-booksy-link">
+                  Booksy
+                </a>
                 .
               </p>
             </Reveal>

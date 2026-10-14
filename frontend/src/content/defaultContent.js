@@ -1,7 +1,7 @@
 export const defaultContent = {
   siteName: "Anna Foland",
   siteSuffix: "psycholog sportu",
-  tagline: "Precyzja architektoniczna, inżynieria jutra",
+  tagline: "Psychologia sportu. Twój codzienny support.",
   hero: {
     eyebrow: "Psycholog sportu",
     lines: ["PSYCHOLOGIA SPORTU.", "SILNA GŁOWA.", "ŚWIADOMY ROZWÓJ."],
@@ -173,12 +173,11 @@ export const defaultContent = {
   },
   contact: {
     eyebrow: "Kontakt",
-    title: "Porozmawiajmy o Twojej inwestycji.",
-    address: "ul. Architektów 12, 00-001 Warszawa",
-    phone: "+48 22 000 00 00",
-    email: "biuro@studioverto.pl",
-    hours: "Poniedziałek–Piątek: 9:00–17:00",
-    companyData: "NIP 000-000-00-00 · KRS 0000000000",
+    title: "Porozmawiajmy o Twoim rozwoju.",
+    email: "annafoland.tcs@gmail.com",
+    booksy: "https://annafoland.booksy.com",
+    facebook: "https://www.facebook.com/twojcodziennysupport",
+    instagram: "https://www.instagram.com/annafoland_psychologsportu/",
   },
   footer: {
     note: "Wszystkie treści na tej stronie są treścią demonstracyjną — edytuj je w panelu /admin.",
