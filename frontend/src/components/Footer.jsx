@@ -22,16 +22,23 @@ export default function Footer() {
         <Reveal>
           <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
             <div>
-              <div className="flex items-center gap-3">
-                <LogoMark />
-                <span
-                  className="text-4xl leading-none text-paper"
-                  style={{ fontFamily: "'Great Vibes', cursive" }}
-                >
-                  {content.siteName}
+              <div className="flex items-center gap-4">
+                <LogoMark className="h-14 w-14" />
+                <span>
+                  <span
+                    className="block whitespace-nowrap text-4xl leading-tight text-paper"
+                    style={{ fontFamily: "'Mr Dafoe', cursive" }}
+                  >
+                    {content.siteName}
+                  </span>
+                  <span className="mt-1 block text-sm font-semibold tracking-wide text-paper">
+                    {(content.siteSuffix || "").charAt(0).toUpperCase() + (content.siteSuffix || "").slice(1)}
+                  </span>
+                  <span className="mt-0.5 block text-[9px] uppercase tracking-[0.3em] text-paper/60">
+                    {content.tagline}
+                  </span>
                 </span>
               </div>
-              <p className="mt-6 max-w-md text-sm leading-relaxed text-paper/60">{content.tagline}</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a
                   href={c.facebook || "#"}

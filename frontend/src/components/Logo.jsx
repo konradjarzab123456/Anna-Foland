@@ -19,13 +19,16 @@ export default function Logo({ content, onClick }) {
       <LogoMark />
       <span className="leading-none">
         <span
-          className="block whitespace-nowrap text-[1.7rem] leading-tight text-ink"
-          style={{ fontFamily: "'Great Vibes', cursive" }}
+          className="block whitespace-nowrap text-[1.8rem] leading-tight text-ink"
+          style={{ fontFamily: "'Mr Dafoe', cursive" }}
         >
           {content.siteName}
         </span>
-        <span className="mt-1.5 block whitespace-nowrap text-[8px] uppercase tracking-[0.28em] text-graphite">
-          {content.siteSuffix}
+        <span className="mt-1 block whitespace-nowrap text-[13px] font-semibold tracking-wide text-ink">
+          {(content.siteSuffix || "").charAt(0).toUpperCase() + (content.siteSuffix || "").slice(1)}
+        </span>
+        <span className="mt-0.5 block whitespace-nowrap text-[8px] uppercase tracking-[0.28em] text-graphite">
+          {content.tagline}
         </span>
       </span>
     </span>
