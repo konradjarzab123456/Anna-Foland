@@ -33,47 +33,7 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Team */}
-      <section className="border-t border-hairline bg-subtle/60">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12">
-          <Reveal>
-            <h2 className="font-display text-3xl font-light tracking-tight sm:text-5xl">Zespół ekspertów</h2>
-          </Reveal>
-          <div className="mt-14 grid gap-px overflow-hidden border border-hairline bg-hairline sm:grid-cols-3">
-            {a.team.map((m, i) => (
-              <Reveal key={i} delay={i * 0.12}>
-                <div className="group bg-white p-10" data-testid={`team-card-${i}`}>
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-ink font-display text-2xl font-light text-paper transition-colors duration-500 group-hover:bg-gold group-hover:text-ink">
-                    {m.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
-                  </div>
-                  <h3 className="mt-6 font-display text-2xl font-light text-ink">{m.name}</h3>
-                  <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">{m.role}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Awards */}
-      <section className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-12">
-        <div className="grid gap-12 lg:grid-cols-2">
-          <Reveal>
-            <h2 className="font-display text-3xl font-light tracking-tight sm:text-4xl">Nagrody i publikacje</h2>
-          </Reveal>
-          <div>
-            {a.awards.map((aw, i) => (
-              <Reveal key={i} delay={i * 0.1}>
-                <p className="flex items-center gap-4 border-b border-hairline py-5 text-graphite" data-testid={`about-award-${i}`}>
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                  {aw}
-                </p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
+
