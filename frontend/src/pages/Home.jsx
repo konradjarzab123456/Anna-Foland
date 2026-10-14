@@ -205,7 +205,7 @@ export default function Home() {
                 Porozmawiaj o swoim rozwoju.
               </h2>
               <p className="mt-6 max-w-md text-graphite">
-                Odpowiadam w ciągu 24 godzin roboczych. Pełny formularz znajdziesz w zakładce{" "}
+                Odpowiadam w ciągu 24 godzin. Pełny formularz znajdziesz w zakładce{" "}
                 <Link to="/kontakt" className="link-underline text-ink" data-testid="quick-contact-full-link">
                   Kontakt
                 </Link>
