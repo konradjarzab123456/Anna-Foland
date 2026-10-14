@@ -19,7 +19,7 @@ export default function Logo({ content, onClick }) {
       <LogoMark />
       <span className="leading-none">
         <span
-          className="block whitespace-nowrap text-[1.8rem] leading-tight text-ink first-letter:text-[3.1rem] first-letter:leading-none"
+          className="block whitespace-nowrap text-[1.8rem] leading-tight text-ink"
           style={{ fontFamily: "'Sacramento', cursive" }}
         >
           {content.siteName}
