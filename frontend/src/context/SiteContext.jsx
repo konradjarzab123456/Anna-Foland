@@ -20,6 +20,8 @@ export function SiteProvider({ children }) {
   const { data, isLoading } = useQuery({
     queryKey: ["site-content"],
     queryFn: async () => (await api.get("/content")).data.data,
+    staleTime: 0,
+    refetchOnMount: true,
   });
 
   const content = useMemo(() => deepMerge(defaultContent, data ?? null), [data]);

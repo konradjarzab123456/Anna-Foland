@@ -1,5 +1,4 @@
-export const LOGO_URL =
-  "https://customer-assets-agu9un31.emergentagent.net/job_website-tabs-app/artifacts/f692c7d781c09792_1000059810.jpg";
+export const LOGO_URL = "/photos/logo.jpg";
 
 export const LogoMark = ({ className = "h-10 w-10" }) => (
   <img
