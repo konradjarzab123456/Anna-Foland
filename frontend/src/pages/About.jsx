@@ -16,9 +16,9 @@ export default function About() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Reveal>
-              <TiltImage src={a.image} alt="Zespół studia" className="aspect-[3/4] rounded-br-[80px]" parallax />
+              <TiltImage src={a.image} alt="Anna Foland — psycholog sportu" className="aspect-[3/4] rounded-br-[80px]" parallax />
               <div className="mt-4 border-t border-hairline pt-4">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-steel">Fig. 02 — Pracownia</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-steel">Fig. 02</span>
               </div>
             </Reveal>
           </div>
@@ -30,18 +30,6 @@ export default function About() {
                 </p>
               </Reveal>
             ))}
-
-            <Reveal delay={0.3}>
-              <div className="mt-14 grid gap-px overflow-hidden border border-hairline bg-hairline sm:grid-cols-3">
-                {a.values.map((v, i) => (
-                  <div key={i} className="card-lift bg-white p-8" data-testid={`about-value-card-${i}`}>
-                    <span className="font-mono text-xs text-gold">{String(i + 1).padStart(2, "0")}</span>
-                    <h3 className="mt-4 font-display text-2xl font-light text-ink">{v.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-graphite">{v.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
           </div>
         </div>
       </section>
