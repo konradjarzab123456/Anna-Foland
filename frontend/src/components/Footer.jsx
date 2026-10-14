@@ -24,7 +24,12 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3">
                 <LogoMark />
-                <span className="font-display text-3xl font-light">{content.siteName}</span>
+                <span
+                  className="text-4xl leading-none text-paper"
+                  style={{ fontFamily: "'Great Vibes', cursive" }}
+                >
+                  {content.siteName}
+                </span>
               </div>
               <p className="mt-6 max-w-md text-sm leading-relaxed text-paper/60">{content.tagline}</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
