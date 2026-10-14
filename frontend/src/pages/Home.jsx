@@ -117,7 +117,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-hairline sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:px-12">
             {content.stats.map((s, i) => (
               <Reveal key={i} delay={i * 0.12} className="px-6 py-10 lg:px-8">
-                <p className="font-display text-5xl font-light text-ink" data-testid={`stat-value-${i}`}>
+                <p className="font-sans text-5xl font-light text-ink" data-testid={`stat-value-${i}`}>
                   {s.value}
                 </p>
                 <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.2em] text-graphite">{s.label}</p>
