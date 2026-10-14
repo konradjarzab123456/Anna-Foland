@@ -93,7 +93,7 @@ export const defaultContent = {
         tab: "Na Obozy i Zgrupowania Sportowe (Camps)",
         title: "Praktyczna wiedza mentalna zintegrowana z intensywnym treningiem fizycznym",
         image:
-          "/photos/anna_white.jpg",
+          "/photos/camps_field.jpg",
         desc: "Obóz sportowy to idealne miejsce na przyswojenie nawyków mentalnych. Zapewniam interaktywne warsztaty połączone z ćwiczeniami praktycznymi, które młodzi i doświadczeni zawodnicy mogą natychmiast przetestować podczas codziennych treningów na zgrupowaniu.",
         items: [
           { title: "Modułowe warsztaty tematyczne", desc: "krótkie, angażujące zajęcia (np. „Jak radzić sobie z błędem w trakcie gry”, „Wyznaczanie celów”, „Pewność siebie w praktyce”)." },
@@ -107,7 +107,7 @@ export const defaultContent = {
         tab: "Dla Osób Aktywnych",
         title: "Łącz pasję sportową z życiem codziennym i przełamuj własne bariery",
         image:
-          "/photos/anna_medals.jpg",
+          "/photos/active_runner.jpg",
         desc: "Sport rekreacyjny, przygotowania do maratonu, triathlonu czy pierwszych zawodów w życiu wymagają ogromnej dyscypliny i odporności psychicznej. Wsparcie mentalne pomaga utrzymać regularność, radzić sobie z brakiem czasu oraz czerpać maksymalną satysfakcję z aktywności fizycznej.",
         items: [
           { title: "Budowanie trwałych nawyków i motywacji", desc: "praca nad stałością treningową i pokonywaniem wymówek w codziennym harmonogramie." },
