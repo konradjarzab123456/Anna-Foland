@@ -64,7 +64,7 @@ export const defaultContent = {
         tab: "Dla Zawodnika Indywidualnego",
         title: "Zauważ swój potencjał",
         image:
-          "/photos/anna_navy.jpg",
+          "/photos/konsultacja.jpg",
         desc: "Praca indywidualna przeznaczona jest dla sportowców na każdym etapie kariery — od obiecujących juniorów po zawodników zawodowych. Podczas sesji 1-na-1 pracujemy nad obszarami, które decydują o tym, czy na zawodach potrafisz zaprezentować 100% umiejętności wypracowanych na treningach.",
         items: [
           { title: "Diagnoza i profilowanie mentalne", desc: "określenie Twoich mocnych stron, stylów radzenia sobie ze stresem oraz obszarów do rozwoju." },
@@ -79,7 +79,7 @@ export const defaultContent = {
         tab: "Dla Klubu, Drużyny i Sztabu Szkoleniowego",
         title: "Buduj spójny zespół, efektywną komunikację i silną kulturę wygrywania",
         image:
-          "/photos/klub_workshop.jpeg",
+          "/photos/anna_pink_football.jpg",
         desc: "Sukces zespołu to coś więcej niż suma indywidualnych umiejętności zawodników. Oferta dla klubów nastawiona jest na integrację grupy, usprawnienie przepływu informacji między zawodnikami a sztabem oraz stworzenie środowiska sprzyjającego długofalowemu rozwojowi.",
         items: [
           { title: "Warsztaty integracyjne (Team Building)", desc: "budowanie spójności grupy, zaufania oraz jasnego podziału ról w drużynie." },
@@ -93,7 +93,7 @@ export const defaultContent = {
         tab: "Na Obozy i Zgrupowania Sportowe (Camps)",
         title: "Praktyczna wiedza mentalna zintegrowana z intensywnym treningiem fizycznym",
         image:
-          "/photos/camps_field.jpg",
+          "/photos/anna_led.jpg",
         desc: "Obóz sportowy to idealne miejsce na przyswojenie nawyków mentalnych. Zapewniam interaktywne warsztaty połączone z ćwiczeniami praktycznymi, które młodzi i doświadczeni zawodnicy mogą natychmiast przetestować podczas codziennych treningów na zgrupowaniu.",
         items: [
           { title: "Modułowe warsztaty tematyczne", desc: "krótkie, angażujące zajęcia (np. „Jak radzić sobie z błędem w trakcie gry”, „Wyznaczanie celów”, „Pewność siebie w praktyce”)." },
@@ -107,7 +107,7 @@ export const defaultContent = {
         tab: "Dla Osób Aktywnych",
         title: "Łącz pasję sportową z życiem codziennym i przełamuj własne bariery",
         image:
-          "/photos/active_runner.jpg",
+          "/photos/office_stilllife.jpg",
         desc: "Sport rekreacyjny, przygotowania do maratonu, triathlonu czy pierwszych zawodów w życiu wymagają ogromnej dyscypliny i odporności psychicznej. Wsparcie mentalne pomaga utrzymać regularność, radzić sobie z brakiem czasu oraz czerpać maksymalną satysfakcję z aktywności fizycznej.",
         items: [
           { title: "Budowanie trwałych nawyków i motywacji", desc: "praca nad stałością treningową i pokonywaniem wymówek w codziennym harmonogramie." },
