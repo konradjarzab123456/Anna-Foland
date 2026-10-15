@@ -11,7 +11,7 @@ const TABS = [
   { id: "zawodnik", label: "Zawodnik", full: "Dla Zawodnika Indywidualnego", path: "/oferta/zawodnik-indywidualny" },
   { id: "klub", label: "Klub i Sztab", full: "Dla Klubu, Drużyny i Sztabu Szkoleniowego", path: "/oferta/klub-i-sztab" },
   { id: "camps", label: "Camps", full: "Na Obozy i Zgrupowania Sportowe (Camps)", path: "/oferta/obozy-i-zgrupowania" },
-  { id: "dzieci", label: "Dzieci i Młodzież", full: "Psycholog sportu dzieci i młodzieży", path: "/oferta/dzieci-i-mlodziezy" },
+  { id: "dzieci", label: "Trening mentalny", full: "Trening mentalny młodych sportowców", path: "/oferta/dzieci-i-mlodziezy" },
   { id: "aktywni", label: "Aktywni", full: "Dla Osób Aktywnych", path: "/oferta/dla-osob-aktywnych" },
   { id: "kontakt", label: "Kontakt", path: "/kontakt" },
 ];

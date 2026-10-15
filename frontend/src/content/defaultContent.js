@@ -105,20 +105,17 @@ export const defaultContent = {
       },
       {
         slug: "dzieci-i-mlodziezy",
-        tab: "Psycholog sportu dzieci i młodzieży",
+        tab: "Trening mentalny młodych sportowców",
         title: "Zbuduj solidne fundamenty mentalne od najmłodszych lat",
         image:
           "/photos/anna_blazer.jpg",
-        desc: "Dzieci i młodzież w sporcie przeżywają te momenty równie mocno – łącząc treningi ze szkołą, presją wyników i własnym, dynamicznym rozwojem. Moją misją jest towarzyszenie młodym zawodnikom w budowaniu trwałej odporności psychicznej, pewności siebie i czerpaniu prawdziwej radości ze sportu. Pomagam im rozumieć własne emocje, radzić sobie ze stresem i odnajdywać motywację zarówno w chwilach sukcesu, jak i wtedy, gdy pojawiają się trudności.",
+        desc: "Sport to nie tylko kondycja i technika, ale także odporność psychiczna, pewność siebie i umiejętność radzenia sobie z emocjami. Wspieram dzieci i młodzież w budowaniu tych kompetencji, pomagając im radzić sobie ze stresem, presją wyników, porażkami i powrotem do sportu po kontuzji. Korzystam z nowoczesnych metod treningu mentalnego oraz narzędzi rozwijających koncentrację i funkcje poznawcze.",
         items: [
-          { title: "Radzenie sobie ze stresem i presją startową", desc: "nauka regulacji emocji, kontroli napięcia i opanowania w sytuacjach stresowych." },
-          { title: "Budowanie pewności siebie i wiary w swoje możliwości", desc: "rozwijanie stabilnego poczucia własnej wartości, niezależnego wyłącznie od wyników." },
-          { title: "Koncentracja i uwaga", desc: "umiejętność skupienia się na zadaniu na boisku, korcie, bieżni czy basenie." },
-          { title: "Radzenie sobie z porażką i błędami", desc: "nauka wyciągania wniosków z niepowodzeń i szybkiego powrotu do gry bez utraty motywacji." },
-          { title: "Radość ze sportu i ochrona przed wypaleniem", desc: "podtrzymywanie pasji i budowanie zdrowej równowagi między sportem a życiem prywatnym." },
-          { title: "Powrót do sportu po kontuzji", desc: "praca nad lękiem przed ponownym urazem i bezpiecznym odbudowaniem zaufania do własnego ciała." },
-          { title: "Konsultacje dla rodziców", desc: "wsparcie rodziców w mądrym i budującym towarzyszeniu dziecku w jego sportowej pasji." },
-          { title: "Jak pracuję?", desc: "Stwarzam bezpieczną, życzliwą i pełną akceptacji przestrzeń, dostosowaną do wieku oraz dojrzałości emocjonalnej młodego zawodnika. Uczę umiejętności mentalnych, które pomagają nie tylko na boisku czy zawodach - stają się wartościowymi kompetencjami na całe życie – w szkole, relacjach z rówieśnikami i codziennych wyzwaniach." },
+          { title: "Odpornością psychiczną i pewnością siebie", desc: "radzeniem sobie ze stresem, presją i porażkami." },
+          { title: "Koncentracją i motywacją", desc: "utrzymaniem skupienia, czerpaniem radości ze sportu i zapobieganiem wypaleniu." },
+          { title: "Wsparciem w powrocie do sportu po kontuzji", desc: "odbudową zaufania do własnego ciała." },
+          { title: "Świadomym wsparciem rodziców", desc: "budowaniem relacji, która pomaga młodemu sportowcowi rozwijać się i czerpać satysfakcję ze sportu." },
+          { title: "Jak pracuję?", desc: "Tworzę bezpieczną, życzliwą przestrzeń dopasowaną do wieku i potrzeb młodego zawodnika. Rozwijamy umiejętności mentalne, które wspierają nie tylko wyniki sportowe, również także codzienne życie, relacje i radzenie sobie z wyzwaniami." },
         ],
       },
       {
@@ -201,6 +198,7 @@ export const defaultContent = {
   contact: {
     eyebrow: "Kontakt",
     title: "Porozmawiajmy o Twoim rozwoju.",
+    image: "/photos/anna_navy.jpg",
     email: "annafoland.tcs@gmail.com",
     booksy: "https://annafoland.booksy.com",
     facebook: "https://www.facebook.com/twojcodziennysupport",
@@ -216,5 +214,5 @@ export const serviceOptions = [
   "Dla Klubu, Drużyny i Sztabu Szkoleniowego",
   "Na Obozy i Zgrupowania Sportowe (Camps)",
   "Dla Osób Aktywnych",
-  "Psycholog sportu dzieci i młodzieży",
+  "Trening mentalny młodych sportowców",
 ];

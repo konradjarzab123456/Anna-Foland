@@ -1,6 +1,6 @@
 export const LOGO_URL = "/photos/logo.jpg";
 
-export const LogoMark = ({ className = "h-10 w-10" }) => (
+export const LogoMark = ({ className = "h-14 w-14" }) => (
   <img
     src={LOGO_URL}
     alt="Psycholog sportu — logo"

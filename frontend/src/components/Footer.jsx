@@ -9,7 +9,7 @@ const TABS = [
   { id: "zawodnik", label: "Zawodnik", path: "/oferta/zawodnik-indywidualny" },
   { id: "klub", label: "Klub i Sztab", path: "/oferta/klub-i-sztab" },
   { id: "camps", label: "Camps", path: "/oferta/obozy-i-zgrupowania" },
-  { id: "dzieci", label: "Dzieci i Młodzież", path: "/oferta/dzieci-i-mlodziezy" },
+  { id: "dzieci", label: "Trening mentalny", path: "/oferta/dzieci-i-mlodziezy" },
   { id: "aktywni", label: "Aktywni", path: "/oferta/dla-osob-aktywnych" },
   { id: "kontakt", label: "Kontakt", path: "/kontakt" },
 ];
@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
             <div>
               <div className="flex items-center gap-4">
-                <LogoMark className="h-14 w-14" />
+                <LogoMark className="h-16 w-16" />
                 <span>
                   <span
                     className="block whitespace-nowrap text-4xl leading-tight text-paper"

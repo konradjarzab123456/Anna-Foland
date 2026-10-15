@@ -3,6 +3,7 @@ import { Mail, Facebook, Instagram, CalendarCheck } from "lucide-react";
 import { toast } from "sonner";
 import Reveal from "@/components/Reveal";
 import PageHeader from "@/components/PageHeader";
+import TiltImage from "@/components/TiltImage";
 import { useSite } from "@/context/SiteContext";
 import { serviceOptions } from "@/content/defaultContent";
 import api, { formatApiError } from "@/lib/api";
@@ -41,6 +42,14 @@ export default function Contact() {
           {/* Info */}
           <div className="lg:col-span-4">
             <Reveal>
+              {c.image && (
+                <div className="mb-10">
+                  <TiltImage src={c.image} alt={content.siteName} className="aspect-[3/4] rounded-br-[80px]" parallax />
+                  <div className="mt-4 border-t border-hairline pt-4">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-steel">Fig. 03</span>
+                  </div>
+                </div>
+              )}
               <div className="space-y-10" data-testid="contact-info">
                 <div className="flex gap-5" data-testid="contact-info-email">
                   <Mail size={18} className="mt-1 shrink-0 text-gold" />

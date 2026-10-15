@@ -376,7 +376,7 @@ export default function Admin() {
       <header className="sticky top-0 z-40 border-b border-hairline bg-white/90 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <div className="flex items-center gap-3">
-            <LogoMark className="h-7 w-7" />
+            <LogoMark className="h-9 w-9" />
             <span className="font-mono text-xs uppercase tracking-[0.2em]">Edytor treści</span>
           </div>
           <div className="flex items-center gap-3">
