@@ -6,7 +6,7 @@ export const defaultContent = {
     eyebrow: "Psycholog sportu",
     lines: ["PSYCHOLOGIA SPORTU.", "SILNA GŁOWA.", "ŚWIADOMY ROZWÓJ."],
     subtitle:
-      "Cześć. Jestem psychologiem sportu i wspieram osoby aktywne fizycznie w rozwijaniu potencjału mentalnego oraz skutecznym radzeniu sobie z wyzwaniami, które pojawiają się w sporcie i codziennym życiu. Należę do Polskiego Towarzystwa Psychologicznego oraz Sekcji Psychologii Sportu.",
+      "Cześć. Nazywam się Anna Foland. Jestem psychologiem sportu i wspieram osoby aktywne fizycznie w rozwijaniu potencjału mentalnego oraz skutecznym radzeniu sobie z wyzwaniami, które pojawiają się w sporcie i codziennym życiu. Ukończyłam jednolite studia psychologiczne (Szkoła Wyższa Psychologii Społecznej w Warszawie) oraz studia podyplomowe Psychologia sportu (Akademia Wychowania Fizycznego w Warszawie). Należę do Polskiego Towarzystwa Psychologicznego oraz Sekcji Psychologii Sportu PTP. Prywatnie moją wieloletnią pasją są długodystansowe biegi górskie.",
     ctaPrimary: "Umów konsultację",
     ctaSecondary: "Poznaj mnie",
     image:
@@ -30,7 +30,7 @@ export const defaultContent = {
     eyebrow: "O firmie",
     title: "Psychologia sportu. Silna głowa. Świadomy rozwój.",
     paragraphs: [
-      "Cześć. Jestem psychologiem sportu i wspieram osoby aktywne fizycznie w rozwijaniu potencjału mentalnego oraz skutecznym radzeniu sobie z wyzwaniami, które pojawiają się w sporcie i codziennym życiu. Należę do Polskiego Towarzystwa Psychologicznego oraz Sekcji Psychologii Sportu.",
+      "Cześć. Nazywam się Anna Foland. Jestem psychologiem sportu i wspieram osoby aktywne fizycznie w rozwijaniu potencjału mentalnego oraz skutecznym radzeniu sobie z wyzwaniami, które pojawiają się w sporcie i codziennym życiu. Ukończyłam jednolite studia psychologiczne (Szkoła Wyższa Psychologii Społecznej w Warszawie) oraz studia podyplomowe Psychologia sportu (Akademia Wychowania Fizycznego w Warszawie). Należę do Polskiego Towarzystwa Psychologicznego oraz Sekcji Psychologii Sportu PTP. Prywatnie moją wieloletnią pasją są długodystansowe biegi górskie.",
       "Łączę wiedzę psychologiczną z doświadczeniem własnej drogi sportowej – jako ultramaratonka wiem, jak wiele pracy, konsekwencji i gotowości mentalnej wymaga przekraczanie własnych granic. Wiem, że na długiej trasie przychodzi moment, w którym sama kondycja fizyczna przestaje wystarczać. Pojawia się zmęczenie, ból, zwątpienie, czasem pytanie: „Po co właściwie to robię?” I właśnie wtedy zaczyna się ta część sportu, która fascynuje mnie najbardziej – spotkanie z własną psychiką.",
       "To, jak myślimy. Jak reagujemy na trudności? Co mówimy sobie w chwilach kryzysu? Czy potrafimy skupić się na tym, na co mamy wpływ? Czy umiemy zaufać sobie, kiedy wynik nie układa się po naszej myśli?",
       "Pracuję zarówno z osobami uprawiającymi sport wyczynowo, jak i rekreacyjnie. Podczas indywidualnych konsultacji, warsztatów oraz zawodów pomagam rozwijać m.in. koncentrację, motywację, pewność siebie i odporność psychiczną, a także lepiej radzić sobie ze stresem, emocjami i presją wyniku.",
